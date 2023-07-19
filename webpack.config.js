@@ -11,13 +11,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-    template: './src/index.html',
+      template: './src/index.html',
     }),
   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-   clean: true,
+    clean: true,
   },
   module: {
     rules: [
@@ -27,7 +27,7 @@ module.exports = {
       },
     ],
   },
-   optimization: {
+  optimization: {
     runtimeChunk: 'single',
   },
   mode: 'development',
